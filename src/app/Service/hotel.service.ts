@@ -9,7 +9,7 @@ import { lastValueFrom, Observable, map, catchError, throwError } from 'rxjs';
 export class HotelService {
 
   private apiUrl =
-    'http://localhost/Facilita-Api/Facilita_Api/Buscar_hoteis/hoteis.php';
+    'http://localhost/Facilita_Api/Buscar_hoteis/hoteis.php';
   protected dataSource: CustomStore;
   dataChanged: EventEmitter<void> = new EventEmitter<void>();
 

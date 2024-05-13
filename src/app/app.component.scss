@@ -6,33 +6,61 @@
     background: #ddd;
   }
 
-  // container de listagem 
+  // container de listagem
   .deb2558fd3 {
-    width: 1143px;
-    display: flex;
-    flex-direction: row;
+    width: 1142px;
+    display: grid;
+    flex-direction: column;
+    border-radius: 10px;
     background: white;
+    grid-template-columns: repeat(2, 1fr);
+    flex: 1 1 50%;
+    padding: 10px;
+    flex-wrap: nowrap;
   }
 
   .ecc9a4771b {
-    font-family: 'Times New Roman', Times, serif;
-
+    font-family: "Times New Roman", Times, serif;
     margin-left: 11px;
     display: flex;
     flex-direction: column;
   }
+  //filter
+  .filter {
+    height: 70px;
+    border-radius: 15px;
+  }
 
-  // Listagem de hoteis 
+input.search{
+    width: 26%;
+    height: 44px;
+    color: blue;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+
+  span.material-symbols-outlined {
+    display: flex !important;
+    position: absolute !important;
+    top: 87px;
+    left: 647px;
+  }
+  // Listagem de hoteis
   .c82435a4b8.a178069f51.a6ae3c2b40.a18aeea94d.d794b7a0f7.f53e278e95.bd095dbb09 {
     display: flex;
     flex-direction: row;
-    width: auto;
+    width: 100%;
     height: auto;
-    border: 1px solid greenyellow;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
     img {
-      width: 100% !important;
-      height: 300px;
+      width: 86% !important;
+      height: 275px;
+      border-radius: 34px;
+      margin-left: 7px;
     }
 
     .title-hotel {
@@ -43,7 +71,24 @@
     .ea25a157a2 {
       width: 247px;
       height: max-content;
-      border: 1px solid red;
     }
   }
+}
+.button-access {
+  display: flex;
+  width: 136px;
+  height: 30px;
+  background-color: #489cff;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
