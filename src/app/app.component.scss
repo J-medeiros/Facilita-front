@@ -1,0 +1,49 @@
+::ng-deep {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    background: #ddd;
+  }
+
+  // container de listagem 
+  .deb2558fd3 {
+    width: 1143px;
+    display: flex;
+    flex-direction: row;
+    background: white;
+  }
+
+  .ecc9a4771b {
+    font-family: 'Times New Roman', Times, serif;
+
+    margin-left: 11px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  // Listagem de hoteis 
+  .c82435a4b8.a178069f51.a6ae3c2b40.a18aeea94d.d794b7a0f7.f53e278e95.bd095dbb09 {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    border: 1px solid greenyellow;
+
+    img {
+      width: 100% !important;
+      height: 300px;
+    }
+
+    .title-hotel {
+      color: black;
+      font-weight: 600;
+    }
+
+    .ea25a157a2 {
+      width: 247px;
+      height: max-content;
+      border: 1px solid red;
+    }
+  }
+}
