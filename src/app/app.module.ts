@@ -10,14 +10,6 @@ import { BrowserModule } from '@angular/platform-browser';
 @NgModule({
     declarations: [],
     imports: [
-        BrowserModule,
-        CommonModule,
-        AppRoutingModule,
-        RouterOutlet,
-        HttpClientModule,
-
-
-        //Aplicação
 
 
     ],

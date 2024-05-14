@@ -1,0 +1,25 @@
+<div class="f2cf178bcd df11f444aa">
+  <h2 class="af8fbdf136 e6208ee469 d0caee4251">Todos os quartos são pensados para que se sinta em casa</h2>
+</div>
+<div class="deb2558fd3">
+
+  <dx-data-grid [dataSource]="dataSource" [remoteOperations]="true" [height]="'auto'" [showBorders]="true">
+
+    <dxi-column dataField="tipo" dataType="date"> </dxi-column>
+    <dxi-column dataField="andar"> </dxi-column>
+    <dxi-column dataField="status"></dxi-column>
+    <dxi-column dataField="info_quarto"></dxi-column>
+
+    <dxi-column caption="Ação" cellTemplate="action">
+    </dxi-column>
+
+    <div *dxTemplate="data of 'action'">
+      <div class="btn">
+        <button class="button-access">Realizar reserva</button>
+      </div>
+    </div>
+
+  </dx-data-grid>
+
+
+</div>

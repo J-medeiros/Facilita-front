@@ -1,15 +1,17 @@
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { HttpClient, HttpParams } from '@angular/common/http';
-import { EventEmitter, Injectable } from '@angular/core';
+import { EventEmitter } from '@angular/core';
 import CustomStore from 'devextreme/data/custom_store';
-import { lastValueFrom, Observable, map, catchError, throwError } from 'rxjs';
+import { lastValueFrom, map, catchError, throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class HotelService {
+export class ReservaService {
 
   private apiUrl =
-    'http://localhost/Facilita-Api/Facilita_Api/Buscar_hoteis/hoteis.php';
+    'http://localhost/Facilita-Api/Facilita_Api/Reserva/reservas.php';
   protected dataSource: CustomStore;
   dataChanged: EventEmitter<void> = new EventEmitter<void>();
 
@@ -93,8 +95,21 @@ export class HotelService {
       })
     );
   }
-  getDataSource() {
+  getDataSource(): any {
     return this.dataSource;
   }
+  // getReservationsByHotelId(hotelId: number): Observable<any[]> {
+  //   const params = new HttpParams().set('id', hotelId.toString());
+  //   return this.http.get<any[]>(this.apiUrl, { params }).pipe(
+  //     map(data => data),
+  //     catchError(error => {
+  //       console.error('Error fetching reservations:', error);
+  //       return throwError(error);
+  //     })
+  //   );
+  // }
 
+  getReservationsByHotelId(id: any): any {
+    return this.http.get<any[]>(`${this.apiUrl}?id=${id}`);
+  }
 }

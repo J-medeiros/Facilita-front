@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    background: #ddd;
+}
+
+/* container de listagem */
+.deb2558fd3 {
+    width: 953px !important;
+    display: flex !important;
+    flex-direction: row;
+    border-radius: 10px;
+    background: white;
+    padding: 10px;
+}
