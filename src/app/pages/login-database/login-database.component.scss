@@ -1,0 +1,34 @@
+.pag {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  width: 40%;
+  height: 100ch;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+// deixar formulario alinhado
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.login button {
+  margin-top: 15px;
+}
+.img {
+  width: 100%;
+  height: 20%;
+  background-image: url("../../../assets/Imagens/Login/logojpg.jpg");
+  background-repeat: no-repeat;
+  background-size: 200px 100px;
+}
+.item-form {
+  width: 50%s;
+}

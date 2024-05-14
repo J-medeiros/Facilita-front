@@ -1,0 +1,31 @@
+<div class="container">
+  <h3 style="color:#20c997;">Conectar ao banco de dados</h3>
+
+  <dx-form id="form" [(formData)]="credenciais" [readOnly]="false" [showColonAfterLabel]="true"
+    [showValidationSummary]="true">
+
+
+
+    <dxi-item dataField="servername" class="server">
+      <dxo-label text="Servidor"></dxo-label>
+    </dxi-item>
+
+    <dxi-item dataField="username" class="username">
+      <dxo-label text="Usuário"></dxo-label>
+    </dxi-item>
+
+    <dxi-item dataField="password" class="password">
+      <dxo-label text="Senha"></dxo-label>
+
+    </dxi-item>
+
+    <dxi-item dataField="dbname" class="databaseName">
+      <dxo-label text="Nome do Banco de Dados"></dxo-label>
+    </dxi-item>
+
+    <dxi-item>
+      <dx-button class="btn btn-success" text="Conectar" [width]="100" [height]="45" (click)="login()"></dx-button>
+    </dxi-item>
+
+  </dx-form>
+</div>
