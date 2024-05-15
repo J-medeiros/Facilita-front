@@ -8,8 +8,8 @@ import { LoginDatabaseComponent } from './pages/login-database/login-database.co
 export const routes: Routes = [
     { path: '', component: LoginDatabaseComponent },
     { path: 'Listar', component: ListarHoteisComponent },
-    { path: 'Reserva', component: ReservaComponent },
-    { path: 'hotel/:id', component: HotelQuartosComponent }
+    { path: 'hotel/:id', component: HotelQuartosComponent },
+    { path: 'reservar/:id', component: ReservaComponent }
 
 ];
 @NgModule({

@@ -98,18 +98,18 @@ export class ReservaService {
   getDataSource(): any {
     return this.dataSource;
   }
-  // getReservationsByHotelId(hotelId: number): Observable<any[]> {
-  //   const params = new HttpParams().set('id', hotelId.toString());
-  //   return this.http.get<any[]>(this.apiUrl, { params }).pipe(
-  //     map(data => data),
-  //     catchError(error => {
-  //       console.error('Error fetching reservations:', error);
-  //       return throwError(error);
-  //     })
-  //   );
-  // }
+
 
   getReservationsByHotelId(id: any): any {
     return this.http.get<any[]>(`${this.apiUrl}?id=${id}`);
   }
+
+  getQuartoById(id: number): any {
+    return this.http.get<any>(`${this.apiUrl}?id=${id}`);
+  }
+
+  reservarQuarto(data: any): any {
+    return this.http.post<any>(this.apiUrl, data);
+  }
+
 }

@@ -1,16 +1,77 @@
-body {
+.component {
     display: flex;
     align-items: center;
-    justify-content: center !important;
-    background: #ddd;
+    justify-content: center;
+    background: #dddddd92;
+    width: 100vw;
+    height: 100vh;
 }
 
-/* container de listagem */
-.deb2558fd3 {
-    width: 953px !important;
-    display: flex !important;
-    flex-direction: row;
+.reserva-form {
+    display: table;
+    width: 50%;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed black;
+    background-color: white;
     border-radius: 10px;
-    background: white;
-    padding: 10px;
+}
+
+.button-access {
+    display: flex;
+    width: 136px;
+    height: 30px;
+    background-color: #489cff;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.campos-dados {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 15px;
+    width: 50%;
+    flex-direction: column;
+
+    input {
+        width: 50%;
+        margin-bottom: 10px;
+        border-color: #ddd;
+        border-radius: 5px;
+    }
+
+    textarea {
+        height: 70px;
+    }
+}
+
+.form-group-dados {
+    display: grid;
+    width: 100%;
+    font-size: 15px;
+    align-items: center;
+    margin-right: 27px;
+    margin-left: 20px;
+    margin-top: 15px;
+
+    input {
+        width: 50%;
+        margin-bottom: 10px;
+        border-color: #489cff;
+        border-radius: 5px;
+    }
+
 }

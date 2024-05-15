@@ -7,7 +7,11 @@
     <dxi-column dataField="andar" caption="Andar" dataType="string"></dxi-column>
     <dxi-column dataField="status" caption="Status" dataType="string"></dxi-column>
     <dxi-column dataField="info_quarto" caption="Informações do Quarto" dataType="string"></dxi-column>
-    <dxi-column caption="Ação" cellTemplate="action"></dxi-column>
+    <dxi-column dataField="id" cellTemplate="action"> </dxi-column>
+
+    <div class="btn" *dxTemplate="let data of 'action'">
+      <button class="button-access" (click)="reservarQuarto(data.value)" text="Reservar">Reservar</button>
+    </div>
   </dx-data-grid>
 </div>
 <ng-template #noData>

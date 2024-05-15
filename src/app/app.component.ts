@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HotelService } from './Service/hotel.service';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +8,7 @@ import { HotelService } from './Service/hotel.service';
   imports: [
     CommonModule,
     RouterOutlet,
+
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

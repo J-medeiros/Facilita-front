@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { ReservaService } from './../../Service/reserva.service';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { DxDataGridModule } from 'devextreme-angular';
 import DataSource from 'devextreme/data/data_source';
 
@@ -24,7 +24,9 @@ export class HotelQuartosComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private service: ReservaService
+    private service: ReservaService,
+    private router: Router
+
   ) { }
 
   ngOnInit(): void {
@@ -49,11 +51,14 @@ export class HotelQuartosComponent implements OnInit {
             key: 'id'
           }
         });
-        console.log('Reservations loaded:', data);
       },
       (error: any) => {
         console.error('Error loading reservations', error);
       }
     );
+  }
+  reservarQuarto(idQuarto: any): void {
+    console.log(idQuarto);
+    this.router.navigate(['/reservar', idQuarto]);
   }
 }
