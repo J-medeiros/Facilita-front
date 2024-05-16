@@ -9,9 +9,9 @@ import { lastValueFrom, map, catchError, throwError } from 'rxjs';
   providedIn: 'root'
 })
 export class ReservaService {
-
+  // http://localhost/Facilita_Api/Buscar_hoteis/hoteis.php
   private apiUrl =
-    'http://localhost/Facilita-Api/Facilita_Api/Reserva/reservas.php';
+    'http://localhost/Facilita_Api/Reserva/reservas.php';
   protected dataSource: CustomStore;
   dataChanged: EventEmitter<void> = new EventEmitter<void>();
 

@@ -40,7 +40,6 @@ export class ReservaComponent implements OnInit {
     private route: ActivatedRoute,
     private reservaService: ReservaService,
     private http: HttpClient,
-    private toastr: ToastrService
   ) { }
 
   ngOnInit() {
@@ -57,11 +56,15 @@ export class ReservaComponent implements OnInit {
   }
 
   loadQuartoInfo() {
+
     this.reservaService.getQuartoById(this.quartoId).subscribe(
       (data: any) => {
+        console.log(data.data[0]);
+
         this.infoQuarto = data.data[0].info_quarto;
         this.tipo = data.data[0].tipo;
         this.andar = data.data[0].andar;
+
 
       },
       (error: any) => {

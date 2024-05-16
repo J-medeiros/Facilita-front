@@ -6,7 +6,7 @@ import CustomStore from 'devextreme/data/custom_store';
   providedIn: 'root',
 })
 export class LoginService {
-  private apiUrl = 'http://localhost/Facilita_Api/Conexao/login.php';
+  private apiUrl = 'http://localhost/Facilita_Api/Conexao/login.php'; //ajuste a url de acordo com sua api no wamperserver
 
   protected dataSource: CustomStore;
   dataChanged: EventEmitter<void> = new EventEmitter<void>();
